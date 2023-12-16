@@ -11,7 +11,6 @@ app.directive('selectPickers',['$compile', function ($compile) {
             element.prepend(paragraph);
         },
         controller: function ($scope) {
-            // Logique générale ici
             $scope.defaultTime = $scope.config.defaultTime || 0;
 
             $scope.timesChanged = function () {

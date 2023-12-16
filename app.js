@@ -51,7 +51,6 @@ app.controller('sameController', ['$scope', function ($scope) {
         defaultTime: 0,
         periodLabels: ['aziza', 'zzzzz'],
         onTimeChange: function() {
-            // Logique spécifique à cette instance de la directive
             console.log('Specific logic for this instance');
         }
     };
@@ -61,7 +60,6 @@ app.controller('sameController', ['$scope', function ($scope) {
         defaultTime: 0,
         periodLabels: ['optionA', 'optionB', 'optionC'],
         onTimeChange: function() {
-            // Logique spécifique à cette autre instance de la directive
             console.log('Specific logic for another instance');
         }
     };
