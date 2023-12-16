@@ -45,3 +45,24 @@ app.controller('TimePickerController', ['$scope', function (scope) {
         }
     };
 }]);
+app.controller('sameController', ['$scope', function ($scope) {
+    $scope.timePickerConfig = {
+        title:'select 1',
+        defaultTime: 0,
+        periodLabels: ['aziza', 'zzzzz'],
+        onTimeChange: function() {
+            // Logique spécifique à cette instance de la directive
+            console.log('Specific logic for this instance');
+        }
+    };
+
+    $scope.anotherTimePickerConfig = {
+        title:'select 2',
+        defaultTime: 0,
+        periodLabels: ['optionA', 'optionB', 'optionC'],
+        onTimeChange: function() {
+            // Logique spécifique à cette autre instance de la directive
+            console.log('Specific logic for another instance');
+        }
+    };
+}]);

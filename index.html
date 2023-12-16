@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <title>AngularJS Project</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-    <script  src="app.js"></script>
+    <script src="app.js"></script>
     <script src="selectPicker.js"></script>
+    <script src="select1.js"></script>
+
 
 
 </head>
 
 <body ng-controller="TimePickerController">
-
-
-        <select-picker period-labels="periodLabels"  default-time="defaultTime" on-time-change="timesChanged()"></select-picker>
-
-
-    
-
+    <select-picker period-labels="periodLabels" default-time="defaultTime"
+        on-time-change="timesChanged()"></select-picker>
+        <div ng-controller="sameController">
+            <select-pickers config="timePickerConfig"></select-pickers>
+            <select-pickers config="anotherTimePickerConfig"></select-pickers>
+        
+        </div>
+        
 </body>
 
 </html>
