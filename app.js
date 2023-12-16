@@ -31,3 +31,17 @@ app.controller('myController', function ($scope, $http) {
     }
 });
 
+app.controller('TimePickerController', ['$scope', function (scope) {
+    console.log('TimePickerController');
+    scope.defaultTime = 0;
+    scope.periodLabels = ['aziza', 'zzzzz'];
+    scope.timesChanged = function () {
+        console.log('time changed : ', scope.defaultTime);
+
+        if (scope.defaultTime == 14) {
+            scope.datePicker = true;
+        } else {
+            console.log(scope.datePicker)
+        }
+    };
+}]);

@@ -1,0 +1,6 @@
+<div class="select">
+    <select id="SelectPickerDetailsTime" name="Date & Time" ng-change="timesChanged()" ng-model="defaultTime">
+        <option ng-repeat="item in periodLabels" value="{{$index}}">{{item}}</option>
+        <option value="{{periodLabels.length}}">custom date</option>
+    </select>
+</div>
